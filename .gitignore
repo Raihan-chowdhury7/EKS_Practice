@@ -1,0 +1,15 @@
+.env
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# keep this file tracked
+!/.terraform.lock.hcl
