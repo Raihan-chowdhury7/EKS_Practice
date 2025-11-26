@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: the-app-hub
-        iamge: Raihan_Test/the-app-hub:22e0324
+        image: nginx:1.27    
         ports:
         - containerPort: 3000
 
