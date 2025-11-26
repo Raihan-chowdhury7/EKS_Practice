@@ -1,8 +1,8 @@
-apiVersion: argopro.io/v1aplha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: apps
-  namespace: argocd
+  namespace: argo-cd
 spec:
   project: default
 
@@ -17,7 +17,7 @@ spec:
 
   syncPolicy:
     automated:
-    prune: true
-    selfHeal: true
-  syncOptions:
-  - CreateNamespace=true
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
