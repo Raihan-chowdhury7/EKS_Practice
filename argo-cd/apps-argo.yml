@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://github.com/Raihan-chowdhury7/EKS_Practice.git'
     targetRevision: HEAD
-    path: app-hub
+    path: apps
 
   destination:
     server: 'https://kubernetes.default.svc'
