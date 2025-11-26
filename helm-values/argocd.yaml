@@ -1,0 +1,18 @@
+global:
+  domain: argo.lab.raihanur.com  
+server:
+# to disable SSL redirection. As our ingress controller handles this
+  insecure: true
+  extraArgs:
+    - --insecure
+  ingress:
+    enabled: true
+    ingressClassName: nginx 
+    hosts:
+      - argo.lab.raihanur.com
+    tls:
+      - hosts:
+          - argo.lab.raihanur.com
+        secretName: argo-server-tls
+    annotations:
+      cert-manager.io/cluster-issuer: issuer

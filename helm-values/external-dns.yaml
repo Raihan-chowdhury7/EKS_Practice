@@ -10,11 +10,10 @@ aws:
 
 sources:
   - ingress
-  - service
 
-policy: upsert-only        
+policy: upsert-only
 registry: txt
-txtOwnerId: "eks-lab"      
+txtOwnerId: "eks-lab"
 
 serviceAccount:
   create: true
@@ -22,7 +21,8 @@ serviceAccount:
   annotations:
     eks.amazonaws.com/role-arn: "arn:aws:iam::193668171151:role/external-dns"
 
+rbac:
+  create: true
+
 domainFilters:
   - lab.raihanur.com
-
-
