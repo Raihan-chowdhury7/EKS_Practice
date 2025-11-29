@@ -34,11 +34,11 @@ spec:
   - name: http
     protocol: TCP
     port: 80
-    targetPort: 3000
+    targetPort: 8080
   - name: app-port
     protocol: TCP
-    port: 8080
-    targetPort: 3000
+    port: 8086
+    targetPort: 8080
 
 ---
 
